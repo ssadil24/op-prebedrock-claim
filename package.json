@@ -1,0 +1,17 @@
+{
+  "name": "op-prebedrock-withdrawal-claim",
+  "version": "1.0.0",
+  "description": "Step-by-step helper for claiming stuck pre-Bedrock OP Mainnet withdrawals on Ethereum. Never asks for a private key.",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "check": "node src/cli.mjs check",
+    "prove": "node src/cli.mjs prove",
+    "finalize": "node src/cli.mjs finalize",
+    "test": "node --test test/withdrawal.test.mjs test/cli.test.mjs"
+  },
+  "dependencies": {
+    "viem": "2.57.5"
+  }
+}
